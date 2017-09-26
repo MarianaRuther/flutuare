@@ -1,5 +1,9 @@
 /*GERAL*/
 
+*{
+    box-sizing: border-box;
+}
+
 body{
     margin: 0; /*para evitar a margem pequena que fica*/
 }
@@ -154,7 +158,7 @@ header{
 
 .cta-form input[type="email"]{
     width: 35%;
-    height: 20px;
+    height: 30px;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     padding-left: 10px;
 }
@@ -172,6 +176,36 @@ header{
 
 .cta-conteudo p{
     text-align: center;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     font-style: italic;
+}
+
+@media screen and (max-width: 768px){
+    .container{
+        width: 100%;
+    }
+    .navbar-menu{
+        display: none;
+    }
+    .banner h1{
+        font-size: 30px;
+    }
+    .itens{
+        flex-direction: column;
+        align-items: center;
+    }
+    .h2{
+        font-size: 18px;
+    }
+    .cta-form input[type="email"]{
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    .cta-form input[type="submit"]{
+        width: 100%;
+
+    }
+    .cta{
+        margin-bottom: 30px;
+    }
 }
