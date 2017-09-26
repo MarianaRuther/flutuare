@@ -1,0 +1,177 @@
+/*GERAL*/
+
+body{
+    margin: 0; /*para evitar a margem pequena que fica*/
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 40px 0 50px 0;
+}
+
+
+/*FONTES*/
+
+h1, h2, li{
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+p, span{
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+li{
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+
+/*NAVEGAÇÃO*/
+
+.navbar{
+    position: fixed; /*barra de navegação fixa*/
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ccc;
+    box-shadow: 0 2px 3px rgba(125, 125, 125, 0.5);
+    width: 100%; /*ocupar toda a tela*/
+    top: 0; /*tirar toda margem que tiver*/
+    right: 0;
+    z-index: 10; /*dá prioridade, de trás para frente; quanto maior, mais prioridade*/
+}
+
+/*.navbar-logo > a > img{   
+    
+    com esse seletor estou pegando o logo, que está dentro de um link, com a imagem! mas podemos usar separado, conforme segue abaixo:
+}*/
+
+.navbar-logo{
+    max-width: 250px;
+    float: left;
+}
+
+.navbar-logo img{
+    width: 100%;
+}
+
+.navbar-menu {
+    padding: 20px 10px 10px 10px;
+}
+
+/*float = alinha um bloco para direita, esquerda, centro, etc, dentro de um texto (por exemplo)*/
+ul{
+    float: right; /*itens alinhados à direita*/
+    list-style: none;
+    
+}
+
+/*quando usa UL LI, ele "desmorona" o bloco e faz um alinhamento*/
+ul li{
+    float: left; /*itens alinhados, em linhas*/
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+li > a{
+    color: #333;
+}
+
+
+/*HEADER*/
+
+.banner h1{
+    padding-top: 120px;
+    font-size: 55px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.banner p{
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+
+.destaque{
+    color: darkorange;
+}
+
+header{
+    width: 100%;
+    background-image: url('../img/banner.jpg');
+    background-size: cover; /*pega só o tamanho do navegador; é responsivo*/
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.itens {
+    display: flex;
+    justify-content: space-around;
+}
+
+.itens > div{
+    max-width: 250px;
+    position: relative;
+}
+
+.itens > div > img{
+    width: 100%;
+}
+
+.destaque-estrela{
+    position: absolute;
+    max-width: 55px;
+    top: 0;  /*vai ficar na posição 0/0 em relação à mãe == 0 esquerda, 0 topo*/
+    right: 0;
+}
+
+/*SECTION CTA*/
+
+.cta{
+    background-image: url(../img/cta.png);
+    background-size: cover;
+    color: white;
+}
+
+.cta-conteudo{
+    border: 1px solid white;
+    padding: 30px;
+}
+
+.cta-form{
+    text-align: center;
+}
+
+.cta-form input[type="email"]{
+    width: 35%;
+    height: 20px;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    padding-left: 10px;
+}
+
+.cta-form input[type="submit"]{
+    background-color: #c1392b;
+    border: 0;
+    padding: 6px 18px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+}
+
+.cta-conteudo p{
+    text-align: center;
+    padding-bottom: 20px;
+    font-style: italic;
+}
